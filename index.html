@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLATYPUS MLB BASEBALL 2: Realistic Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>⚾ PLATYPUS MLB BASEBALL 2 ⚾</h1>
+
+    <div class="stats-bar">
+      <div>Coins: <span id="coins">0</span></div>
+      <div>Power: <span id="powerLevel">1</span></div>
+      <div>Contact: <span id="contactLevel">1</span></div>
+      <div>Bat Speed: <span id="speedLevel">1</span></div>
+    </div>
+
+    <div class="stadium">
+      <div class="scoreboard" id="result">Tap SWING to start!</div>
+
+      <div class="pitch-zone">
+        <div id="ball"></div>
+        <div id="timingMeter">
+          <div id="timingMarker"></div>
+          <div id="perfectZone"></div>
+        </div>
+      </div>
+
+      <button id="swingBtn">SWING</button>
+    </div>
+
+    <div class="shop">
+      <h2>Upgrade Shop</h2>
+      <button onclick="buyUpgrade('power')">Upgrade Power (10 Coins)</button>
+      <button onclick="buyUpgrade('contact')">Upgrade Contact (10 Coins)</button>
+      <button onclick="buyUpgrade('speed')">Upgrade Bat Speed (10 Coins)</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
